@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6130B3299C5EB300F69F71 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7A6130B2299C5EB300F69F71 /* Starfield.sks */; };
 		7A6EC3B52993286600EF3789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6EC3B42993286600EF3789 /* AppDelegate.swift */; };
 		7A6EC3B72993286600EF3789 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6EC3B62993286600EF3789 /* GameViewController.swift */; };
 		7A6EC3BA2993286600EF3789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EC3B82993286600EF3789 /* Main.storyboard */; };
@@ -15,10 +16,10 @@
 		7A6EC3BF2993286600EF3789 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EC3AA2993286500EF3789 /* GameScene.sks */; };
 		7A6EC3C02993286600EF3789 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6EC3AB2993286500EF3789 /* GameScene.swift */; };
 		7A6EC3C12993286600EF3789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EC3AC2993286600EF3789 /* Assets.xcassets */; };
-		7A6EC3C8299328A500EF3789 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EC3C7299328A500EF3789 /* Starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A6130B2299C5EB300F69F71 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 		7A6EC3A92993286500EF3789 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		7A6EC3AA2993286500EF3789 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		7A6EC3AB2993286500EF3789 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		7A6EC3B62993286600EF3789 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		7A6EC3B92993286600EF3789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A6EC3BC2993286600EF3789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7A6EC3C7299328A500EF3789 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Starfield.sks; path = "../../../../../../Downloads/drive-download-20230201T004237Z-001/Starfield.sks"; sourceTree = "<group>"; };
 		7A6EC3C92993297100EF3789 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,11 +75,11 @@
 		7A6EC3B32993286600EF3789 /* spacegame iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7A6130B2299C5EB300F69F71 /* Starfield.sks */,
 				7A6EC3B42993286600EF3789 /* AppDelegate.swift */,
 				7A6EC3B62993286600EF3789 /* GameViewController.swift */,
 				7A6EC3B82993286600EF3789 /* Main.storyboard */,
 				7A6EC3BB2993286600EF3789 /* LaunchScreen.storyboard */,
-				7A6EC3C7299328A500EF3789 /* Starfield.sks */,
 			);
 			path = "spacegame iOS";
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6EC3C8299328A500EF3789 /* Starfield.sks in Resources */,
+				7A6130B3299C5EB300F69F71 /* Starfield.sks in Resources */,
 				7A6EC3BF2993286600EF3789 /* GameScene.sks in Resources */,
 				7A6EC3BA2993286600EF3789 /* Main.storyboard in Resources */,
 				7A6EC3BE2993286600EF3789 /* Actions.sks in Resources */,
