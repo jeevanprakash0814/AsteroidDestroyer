@@ -9,6 +9,9 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    let defaults = UserDefaults()
+    lazy var highScoreNumber = defaults.integer(forKey: "highScoreSaved")
+    
     var starfield:SKEmitterNode!
     var player:SKSpriteNode!
     
@@ -53,7 +56,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         score = 0
         self.addChild(scoreLabel)
         
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(addMeteor), userInfo: nil, repeats: true)
+        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(addMeteor), userInfo: nil, repeats: true)
     }
     
     @objc func addMeteor(){
@@ -95,6 +98,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
         player.removeFromParent()
+        
+        if score > highScoreNumber {
+            highScoreNumber = score
+            defaults.set(highScoreNumber, forKey: "highScoreSaved")
+        }
+        
+        
+        if let view = self.view as! SKView? {
+            if let scene = SKScene(fileNamed: "startMenu") {
+                scene.scaleMode = .aspectFill
+                view.presentScene(scene)
+            }
+            
+            view.ignoresSiblingOrder = true
+            
+            view.showsFPS = true
+            view.showsNodeCount = true
+            view.showsPhysics = true
+            
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
